@@ -1,0 +1,2127 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Tutorialsninja BootCamp</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">BootCamp</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 10, 2024 16:49:21</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 10, 2024 16:49:21</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 10, 2024 16:52:07</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='20%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>22</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='4%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>110</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Add to Cart functionality on Tutorialsninja website":16.825,"Login functionality on Tutorialsninja website":94.291,"Logout functionality on Tutorialsninja website":8.039,"Registration on Tutorialsninja website":28.968,"Search Product functionality of TutorialsNinja":17.771
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@TutorialsNinjaSearchProduct</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TutorialsNinjaAddtoCart</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TutorialNinjaRegister</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidProduct</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@NoFields</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DuplicateEmail</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LogoutRightbottomCornerOption</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TutorialNinjaLogin</td>
+<td>13</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>92.857%</td>
+</tr>
+<tr>
+<td>@TutorialNinjaLogout</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AllFields</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@MandatoryFields</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@InvalidProduct</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@NoProduct</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AddingProductToCart</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>QA</td>
+<td>Nataliia N.</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Cucumber Bootcamp</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Chrome</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 22,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 110,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@TutorialsNinjaSearchProduct</a><a class="dropdown-item" href="#">@TutorialsNinjaAddtoCart</a><a class="dropdown-item" href="#">@TutorialNinjaRegister</a><a class="dropdown-item" href="#">@ValidProduct</a><a class="dropdown-item" href="#">@NoFields</a><a class="dropdown-item" href="#">@DuplicateEmail</a><a class="dropdown-item" href="#">@LogoutRightbottomCornerOption</a><a class="dropdown-item" href="#">@TutorialNinjaLogin</a><a class="dropdown-item" href="#">@TutorialNinjaLogout</a><a class="dropdown-item" href="#">@AllFields</a><a class="dropdown-item" href="#">@MandatoryFields</a><a class="dropdown-item" href="#">@InvalidProduct</a><a class="dropdown-item" href="#">@NoProduct</a><a class="dropdown-item" href="#">@AddingProductToCart</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add to Cart functionality on Tutorialsninja website</p>
+            <p class="text-sm">
+              <span>4:49:21 PM</span> / <span>00:00:16:825</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Add to Cart functionality on Tutorialsninja website</h5>
+<span class='badge badge-success'>01.10.2024 4:49:21 PM</span>
+<span class='badge badge-danger'>01.10.2024 4:49:38 PM</span>
+<span class='badge badge-default'>00:00:16:825</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user of TutorialsNinja,
+I want to add products to my shopping cart,
+So that I can purchase them later.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Adding a product to the cart</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Adding a product to the cart</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I have navigated to the TutorialsNinja homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I enter a valid product name "Samsung Galaxy" in the search bar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I initiate the product search clicking on the search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see a list of products related to the search term in the product search</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click on the add to cart button for "Samsung Galaxy"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see the product added successfully to the cart message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on the checkout button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login functionality on Tutorialsninja website</p>
+            <p class="text-sm">
+              <span>4:49:38 PM</span> / <span>00:01:34:291</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login functionality on Tutorialsninja website</h5>
+<span class='badge badge-success'>01.10.2024 4:49:38 PM</span>
+<span class='badge badge-danger'>01.10.2024 4:51:12 PM</span>
+<span class='badge badge-default'>00:01:34:291</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user of tutorialsninja.com
+I want to log into my account
+So that I can access personalized features of the website</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email nagulanata@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Nataliia@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda1@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda2@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda3@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="155"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda4@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="183"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda5@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="211"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda6@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="239"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda7@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="267"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda8@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="295"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda9@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="323"><span class="badge log pass-bg mr-2">Pass</span>Successful login with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I input a valid email seleniumpanda10@gmail.com into the email field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I input a valid password Selenium@123 into the password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should be redirected to the Account page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="351"><span class="badge log fail-bg mr-2">Fail</span>Unsuccessful login with incorrect password</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_am_on_the_tutorialsninja_login_page()">
+                <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_input_a_valid_email_into_the_email_field(java.lang.String)">
+                <span>When I input a valid email 'user@example.com' into the email field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_enter_an_invalid_password(java.lang.String)">
+                <span>And I enter invalid password "incorrectPassword"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_click_the_login_button()">
+                <span>And I click the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.stepdefinitions.Login.i_should_see_an_error_message_about_invalid_credentials()">
+                <span>Then I should see an error message about invalid credentials</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.tutorialsninja.stepdefinitions.Login.i_should_see_an_error_message_about_invalid_credentials(Login.java:96)
+	at ✽.I should see an error message about invalid credentials(file:///C:/Users/Owner/eclipse-workspace/FRAMEWORK_DESIGN_BDD_Cucumber_part2/src/test/resources/com/tutorialsninja/featureFiles/Login.feature:34)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="379"><span class="badge log pass-bg mr-2">Pass</span>Unsuccessful login with invalid email</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_am_on_the_tutorialsninja_login_page()">
+                <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_enter_an_invalid_email_into_the_email_field()">
+                <span>When I enter invalid email into the email field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_input_a_valid_password_into_the_password_field(java.lang.String)">
+                <span>And I input a valid password "Password123" into the password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_click_the_login_button()">
+                <span>And I click the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_should_see_an_error_message_about_invalid_credentials()">
+                <span>Then I should see an error message about invalid credentials</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="407"><span class="badge log pass-bg mr-2">Pass</span>Unsuccessful login with invalid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_am_on_the_tutorialsninja_login_page()">
+                <span>Given I am on the tutorialsninja login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_enter_an_invalid_email_into_the_email_field()">
+                <span>When I enter invalid email into the email field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_enter_an_invalid_password(java.lang.String)">
+                <span>And I enter invalid password "incorrectPassword"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_click_the_login_button()">
+                <span>And I click the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Login.i_should_see_an_error_message_about_invalid_credentials()">
+                <span>Then I should see an error message about invalid credentials</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="435"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Logout functionality on Tutorialsninja website</p>
+            <p class="text-sm">
+              <span>4:51:12 PM</span> / <span>00:00:08:039</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Logout functionality on Tutorialsninja website</h5>
+<span class='badge badge-success'>01.10.2024 4:51:12 PM</span>
+<span class='badge badge-danger'>01.10.2024 4:51:20 PM</span>
+<span class='badge badge-default'>00:00:08:039</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=435</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">As a user of TutorialsNinja i should log in to my account
+I want to be able to log out of my account
+So that I can ensure my account security when I'm not using the site</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="436"><span class="badge log pass-bg mr-2">Pass</span>Successful logout from Right buttom Corner Options</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.LogOut.i_am_logged_into_the_tutorialsninja_website(java.lang.String,java.lang.String)">
+                <span>Given I am logged into the TutorialsNinja website with email "nagulanata@gmail.com" and password "Nataliia@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.LogOut.i_click_on_the_logout_button_from_right_corner()">
+                <span>When I click on the logout button from Right Corner</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.LogOut.i_should_be_logged_out_of_the_system_and_redirected_to_the_logoutpage()">
+                <span>Then I should be logged out of the system and redirected to the Logoutpage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="454"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Registration on Tutorialsninja website</p>
+            <p class="text-sm">
+              <span>4:51:20 PM</span> / <span>00:00:28:968</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Registration on Tutorialsninja website</h5>
+<span class='badge badge-success'>01.10.2024 4:51:20 PM</span>
+<span class='badge badge-danger'>01.10.2024 4:51:49 PM</span>
+<span class='badge badge-default'>00:00:28:968</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=454</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a new user
+I want to register an account on tutorialsninja.com
+So that I can access exclusive features available to registered users</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="455"><span class="badge log pass-bg mr-2">Pass</span>Successful registration with valid details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_am_on_the_tutorialsninja_registration_page()">
+                <span>Given I am on the tutorialsninja registration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_enter_below_valid_registration_details(io.cucumber.datatable.DataTable)">
+                <span>When I enter below valid registration details</span>
+      <div><table class='markup-table table '><tr><td>firstname</td><td>Nataliia</td></tr><tr><td>lastname</td><td>Chicago</td></tr><tr><td>telephone</td><td>7765663333</td></tr><tr><td>password</td><td>Nataliia@123</td></tr><tr><td>confirmpassword</td><td>Nataliia@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_agrees_to_the_privacy_policy_by_checking_the_box()">
+                <span>And I agrees to the Privacy Policy by checking the box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_submits_the_registration_by_clicking_the_continue_button()">
+                <span>When I submits the registration by clicking the Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_should_see_a_confirmation_message_for_successful_registration()">
+                <span>Then I should see a confirmation message for successful registration</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="483"><span class="badge log pass-bg mr-2">Pass</span>Register with all fields</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_am_on_the_tutorialsninja_registration_page()">
+                <span>Given I am on the tutorialsninja registration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_enter_below_all_fields(io.cucumber.datatable.DataTable)">
+                <span>When I enter below all fields</span>
+      <div><table class='markup-table table '><tr><td>firstname</td><td>Nataliia</td></tr><tr><td>lastname</td><td>Chicago</td></tr><tr><td>telephone</td><td>7765663333</td></tr><tr><td>password</td><td>Nataliia@123</td></tr><tr><td>confirmpassword</td><td>Nataliia@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_selects_yes_to_subscribe_to_the_newsletter()">
+                <span>And I selects yes to subscribe to the newsletter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_agrees_to_the_privacy_policy_by_checking_the_box()">
+                <span>And I agrees to the Privacy Policy by checking the box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_submits_the_registration_by_clicking_the_continue_button()">
+                <span>When I submits the registration by clicking the Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_should_see_a_confirmation_message_for_successful_registration()">
+                <span>Then I should see a confirmation message for successful registration</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="516"><span class="badge log pass-bg mr-2">Pass</span>Register with existing email</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_am_on_the_tutorialsninja_registration_page()">
+                <span>Given I am on the tutorialsninja registration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_enter_below_all_fields_with_existing_email(io.cucumber.datatable.DataTable)">
+                <span>When I enter below all fields with existing email</span>
+      <div><table class='markup-table table '><tr><td>firstname</td><td>Nataliia</td></tr><tr><td>lastname</td><td>Chicago</td></tr><tr><td>email</td><td>nagulanata@gmail.com</td></tr><tr><td>telephone</td><td>7765663333</td></tr><tr><td>password</td><td>Nataliia@123</td></tr><tr><td>confirmpassword</td><td>Nataliia@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_selects_yes_to_subscribe_to_the_newsletter()">
+                <span>And I selects yes to subscribe to the newsletter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_agrees_to_the_privacy_policy_by_checking_the_box()">
+                <span>And I agrees to the Privacy Policy by checking the box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_submits_the_registration_by_clicking_the_continue_button()">
+                <span>When I submits the registration by clicking the Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_should_see_warning_message_of_duplicate_email()">
+                <span>Then I should see warning message of duplicate email</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="549"><span class="badge log pass-bg mr-2">Pass</span>Registration with missing mandatory fields</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_am_on_the_tutorialsninja_registration_page()">
+                <span>Given I am on the tutorialsninja registration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_submits_the_registration_by_clicking_the_continue_button()">
+                <span>When I submits the registration by clicking the Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.Register.i_should_see_error_messages_for_each_mandatory_field()">
+                <span>Then I should see error messages for each mandatory field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="567"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Search Product functionality of TutorialsNinja</p>
+            <p class="text-sm">
+              <span>4:51:49 PM</span> / <span>00:00:17:771</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Search Product functionality of TutorialsNinja</h5>
+<span class='badge badge-success'>01.10.2024 4:51:49 PM</span>
+<span class='badge badge-danger'>01.10.2024 4:52:07 PM</span>
+<span class='badge badge-default'>00:00:17:771</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=567</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a customer of TutorialsNinja
+I want to use the search functionality
+So that I can easily find products I am interested in</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="568"><span class="badge log pass-bg mr-2">Pass</span>Successful product search with valid search term</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="569"><span class="badge log pass-bg mr-2">Pass</span>Successful product search with valid search term</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the TutorialsNinja homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I enter a valid product name "Samsung Galaxy" in the search bar on website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I initiate the search clicking on the search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see a list of products related to the search term</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="592"><span class="badge log pass-bg mr-2">Pass</span>Search for an invalid or non-existent product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.SearchProduct.i_am_on_the_tutorialsninja_homepage()">
+                <span>Given I am on the TutorialsNinja homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.SearchProduct.i_enter_an_invalid_or_non_existent_product_name_in_the_search_bar(java.lang.String)">
+                <span>When I enter an invalid or non-existent product name in the search bar "DELL"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.SearchProduct.i_initiate_the_search_clicking_on_the_search_button()">
+                <span>And I initiate the search clicking on the search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.SearchProduct.i_should_see_a_message_indicating_no_products_were_found()">
+                <span>Then I should see a message indicating no products were found</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="615"><span class="badge log pass-bg mr-2">Pass</span>Search with no product name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.SearchProduct.i_am_on_the_tutorialsninja_homepage()">
+                <span>Given I am on the TutorialsNinja homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.SearchProduct.i_initiate_the_search_clicking_on_the_search_button()">
+                <span>And I initiate the search clicking on the search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.stepdefinitions.SearchProduct.i_should_see_a_message_indicating_no_products_were_found()">
+                <span>Then I should see a message indicating no products were found</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">14</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@TutorialsNinjaSearchProduct</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TutorialsNinjaSearchProduct</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='567' id='569'>Successful product search with valid search term</a>
+<div class="">
+<span class="badge badge-default">Search Product functionality of TutorialsNinja.Successful product search with valid search term</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='567' id='592'>Search for an invalid or non-existent product</a>
+<div class="">
+<span class="badge badge-default">Search Product functionality of TutorialsNinja.Search for an invalid or non-existent product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:52:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='567' id='615'>Search with no product name</a>
+<div class="">
+<span class="badge badge-default">Search Product functionality of TutorialsNinja.Search with no product name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TutorialsNinjaAddtoCart</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TutorialsNinjaAddtoCart</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:49:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Adding a product to the cart</a>
+<div class="">
+<span class="badge badge-default">Add to Cart functionality on Tutorialsninja website.Adding a product to the cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@TutorialNinjaRegister</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TutorialNinjaRegister</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='454' id='455'>Successful registration with valid details</a>
+<div class="">
+<span class="badge badge-default">Registration on Tutorialsninja website.Successful registration with valid details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='454' id='483'>Register with all fields</a>
+<div class="">
+<span class="badge badge-default">Registration on Tutorialsninja website.Register with all fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='454' id='516'>Register with existing email</a>
+<div class="">
+<span class="badge badge-default">Registration on Tutorialsninja website.Register with existing email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='454' id='549'>Registration with missing mandatory fields</a>
+<div class="">
+<span class="badge badge-default">Registration on Tutorialsninja website.Registration with missing mandatory fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@ValidProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidProduct</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='567' id='569'>Successful product search with valid search term</a>
+<div class="">
+<span class="badge badge-default">Search Product functionality of TutorialsNinja.Successful product search with valid search term</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@NoFields</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@NoFields</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='454' id='549'>Registration with missing mandatory fields</a>
+<div class="">
+<span class="badge badge-default">Registration on Tutorialsninja website.Registration with missing mandatory fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@DuplicateEmail</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DuplicateEmail</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='454' id='516'>Register with existing email</a>
+<div class="">
+<span class="badge badge-default">Registration on Tutorialsninja website.Register with existing email</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@LogoutRightbottomCornerOption</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LogoutRightbottomCornerOption</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='435' id='436'>Successful logout from Right buttom Corner Options</a>
+<div class="">
+<span class="badge badge-default">Logout functionality on Tutorialsninja website.Successful logout from Right buttom Corner Options</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>13</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TutorialNinjaLogin</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TutorialNinjaLogin</h4>
+<span status="pass" class='badge log pass-bg'>13 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:49:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='43'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:49:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='71'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:49:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='99'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:49:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='127'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:50:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='155'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:50:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='183'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:50:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='211'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:50:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='239'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:50:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='267'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:50:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='295'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:50:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='323'>Successful login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Successful login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:50:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='351'>Unsuccessful login with incorrect password</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Unsuccessful login with incorrect password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='379'>Unsuccessful login with invalid email</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Unsuccessful login with invalid email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='407'>Unsuccessful login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Unsuccessful login with invalid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TutorialNinjaLogout</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TutorialNinjaLogout</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='435' id='436'>Successful logout from Right buttom Corner Options</a>
+<div class="">
+<span class="badge badge-default">Logout functionality on Tutorialsninja website.Successful logout from Right buttom Corner Options</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AllFields</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AllFields</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='454' id='483'>Register with all fields</a>
+<div class="">
+<span class="badge badge-default">Registration on Tutorialsninja website.Register with all fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@MandatoryFields</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@MandatoryFields</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='454' id='455'>Successful registration with valid details</a>
+<div class="">
+<span class="badge badge-default">Registration on Tutorialsninja website.Successful registration with valid details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@InvalidProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@InvalidProduct</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:51:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='567' id='592'>Search for an invalid or non-existent product</a>
+<div class="">
+<span class="badge badge-default">Search Product functionality of TutorialsNinja.Search for an invalid or non-existent product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@NoProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@NoProduct</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:52:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='567' id='615'>Search with no product name</a>
+<div class="">
+<span class="badge badge-default">Search Product functionality of TutorialsNinja.Search with no product name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AddingProductToCart</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AddingProductToCart</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:49:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Adding a product to the cart</a>
+<div class="">
+<span class="badge badge-default">Add to Cart functionality on Tutorialsninja website.Adding a product to the cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:50:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='375'>Then I should see an error message about invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Tutorialsninja website.Unsuccessful login with incorrect password.Then I should see an error message about invalid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
